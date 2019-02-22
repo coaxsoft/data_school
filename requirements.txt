@@ -1,3 +1,7 @@
 numpy
 matplotlib
 sklearn
+ipython
+jupyter
+pandas
+requests
