@@ -1,6 +1,6 @@
 # Data Science School for Kids
 
-## Content
+## Contents
 
 ### Notebooks
 
