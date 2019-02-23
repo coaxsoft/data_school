@@ -29,7 +29,7 @@ if __name__ == '__main__':
 
     theta = np.random.uniform(-0.5, 0.5, size=(train_x.shape[1], 1))
 
-    EPOCHS = 10000
+    EPOCHS = 150_000
     learning_rate = 0.01
     m = len(train_x)
     for i in range(EPOCHS):
@@ -40,5 +40,6 @@ if __name__ == '__main__':
         grad = train_x.T.dot(d) / m
         theta -= learning_rate * grad
 
-    res_d = train_x.dot(theta)
+    res_d = sigmoid(train_x.dot(theta))
     print(loss(res_d, train_y))
+    print(theta)
